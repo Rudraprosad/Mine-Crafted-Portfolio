@@ -4,7 +4,7 @@ import * as THREE from "three";
 import { Canvas } from "@react-three/fiber";
 import { PerspectiveCamera } from "@react-three/drei";
 import Scene from "./Scene";
-import { useModalStore } from "./stores/modalstore";
+import { useModalStore } from "./stores/modalStore";
 import normalizeWheel from "normalize-wheel";
 
 const Experience = () => {
