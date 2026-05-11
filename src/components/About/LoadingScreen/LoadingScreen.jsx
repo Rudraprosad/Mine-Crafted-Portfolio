@@ -46,7 +46,7 @@ const LoadingScreen = () => {
               isRevealed ? "revealed" : ""
             }`}
           >
-            Hi👋! Thanks for stopping by!! ❤️
+            Loading  takes up to 50 secs, be patient! 🌟
           </div>
           <div
             className={`instructions-container ${isRevealed ? "revealed" : ""}`}
