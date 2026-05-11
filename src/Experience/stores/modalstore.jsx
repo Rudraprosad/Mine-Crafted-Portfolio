@@ -22,3 +22,4 @@ export const useModalStore = create((set) => ({
       modalType: "",
     }),
 }));
+
