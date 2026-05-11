@@ -21,10 +21,10 @@ export default function Model({ progress = 0, pulseIntensity = 0, ...props }) {
   const { openModal } = useModalStore();
 
   const projectNames = {
-    one: "Develop Your Creative Intuition Video",
-    two: "Develop a Self-learning Plan Video",
-    three: "How to Create a Multiplayer Game Video",
-    four: "Create Immersive Worlds Video",
+    one: "Developing creative intution repo",
+    two: "Developing self learning skills repo",
+    three: "Creating a Multiplayer Game ",
+    four: "Creating Immersive Worlds in blender",
   };
 
   const handleClick = (elementID) => {

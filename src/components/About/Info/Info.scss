@@ -51,3 +51,136 @@
 .yellow-text {
   color: styles.$color-font-primary-yellow;
 }
+
+/* ---- Hire Me Card ---- */
+.hire-me-card {
+  margin: 20px 0;
+  padding: 20px;
+  border: 2px solid styles.$color-font-primary-yellow;
+  background-color: styles.$color-base-dark-gray-two;
+  box-shadow: 0 0 12px rgba(255, 215, 0, 0.25);
+  border-radius: 4px;
+}
+
+.hire-me-title {
+  font-size: 1.4rem;
+  color: styles.$color-font-primary-yellow;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.hire-me-subtitle {
+  color: #ccc;
+  margin-bottom: 18px;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.hire-me-contacts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.hire-me-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 3px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+  }
+
+  &--email {
+    background-color: styles.$color-font-primary-yellow;
+    color: #111;
+  }
+
+  &--phone {
+    background-color: transparent;
+    color: styles.$color-font-primary-yellow;
+    border: 1.5px solid styles.$color-font-primary-yellow;
+  }
+}
+
+.hire-me-icon {
+  font-size: 1rem;
+}
+
+.contact-form {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border-top: 1px solid rgba(255, 215, 0, 0.2);
+  padding-top: 20px;
+}
+
+.contact-form-title {
+  color: styles.$color-font-primary-yellow;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.contact-input,
+.contact-textarea {
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 10px 12px;
+  color: white;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 0.95rem;
+
+  &:focus {
+    outline: none;
+    border-color: styles.$color-font-primary-yellow;
+  }
+}
+
+.contact-textarea {
+  resize: vertical;
+}
+
+.contact-submit {
+  background-color: styles.$color-font-primary-yellow;
+  color: #111;
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  &:hover:not(:disabled) {
+    background-color: #e6c200; /* manually use a slightly darker yellow */
+  }
+
+  &:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+}
+
+.contact-status {
+  font-size: 0.9rem;
+  margin-top: 8px;
+  font-weight: 500;
+
+  &.success {
+    color: #4ade80; /* green */
+  }
+
+  &.error {
+    color: #f87171; /* red */
+  }
+}

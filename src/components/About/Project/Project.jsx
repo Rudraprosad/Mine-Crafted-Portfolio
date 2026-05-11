@@ -1,12 +1,14 @@
 import "./Project.scss";
 
 import Button from "../Button/Button";
+import PaymentSection from "./PaymentSection";
 
 const projectData = {
   one: {
-    name: "Video",
+    name: "Weather App",
+    price: 499,
     imageUrl: "/images/intuition.webp",
-    externalLink: "https://youtu.be/ij2vrkoVI8c",
+    externalLink: "https://github.com/Rudraprosad/Weather-app",
     content: [
       {
         header: "About the Video",
@@ -18,9 +20,10 @@ const projectData = {
     ],
   },
   two: {
-    name: "Video",
+    name: "CloudPoint",
+    price: 799,
     imageUrl: "/images/develop-plan.webp",
-    externalLink: "https://www.youtube.com/watch?v=VaidlrZSVqI",
+    externalLink: "https://github.com/Rudraprosad/cloudPoint-",
     content: [
       {
         header: "About the Video",
@@ -33,9 +36,10 @@ const projectData = {
     ],
   },
   three: {
-    name: "Video",
+    name: "Healthcare Portal",
+    price: 999,
     imageUrl: "/images/multiplayer-game.webp",
-    externalLink: "https://www.youtube.com/watch?v=6QdkIOo-fe0",
+    externalLink: "https://github.com/Rudraprosad/DBMS-based-Health-care-portal-using-Mysql",
     content: [
       {
         header: "About the Video",
@@ -50,9 +54,10 @@ const projectData = {
     ],
   },
   four: {
-    name: "Video",
+    name: "Mine-Crafted Portfolio",
+    price: 1499,
     imageUrl: "/images/immersive-world.webp",
-    externalLink: "https://youtu.be/C4g2U2ZYbZ4",
+    externalLink: "https://github.com/Rudraprosad/Mine-Crafted-Portfolio",
     content: [
       {
         header: "About the Video",
@@ -82,7 +87,7 @@ const Project = ({ projectID }) => {
       </div>
 
       <Button href={project.externalLink} type={"link"}>
-        Watch {project.name}
+        github repo
       </Button>
 
       {project.content.map((section, index) => (
@@ -95,6 +100,12 @@ const Project = ({ projectID }) => {
           ))}
         </div>
       ))}
+
+      <PaymentSection
+        projectName={project.name}
+        price={project.price}
+        projectId={projectID}
+      />
     </div>
   );
 };

@@ -3,9 +3,9 @@ import Button from "./Button/Button";
 
 const aboutMeData = {
   one: {
-    name: "Andrew Woan",
+    name: "rudra prosad paul",
     imageUrl: "/images/me.webp",
-    externalLink: "https://www.youtube.com/@andrewwoan",
+    externalLink: "",
     content: [
       {
         header: "About Me",
