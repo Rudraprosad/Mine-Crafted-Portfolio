@@ -10,7 +10,7 @@ import * as THREE from "three";
 import { useGLTFWithKTX2 } from "../utils/useGLTFWithKTX2";
 
 import { convertMaterialsToMeshBasicMaterial } from "../utils/convertMaterial";
-import { useModalStore } from "../stores/modalStore";
+import { useModalStore } from "../stores/modalstore";
 
 import About from "../../components/About/About";
 import Project from "../../components/About/Project/Project";
