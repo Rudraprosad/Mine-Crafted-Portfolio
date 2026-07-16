@@ -1,7 +1,7 @@
 import "./Project.scss";
 
 import Button from "../Button/Button";
-//import PaymentSection from "./PaymentSection";
+
 
 const projectData = {
   one: {
@@ -101,11 +101,7 @@ const Project = ({ projectID }) => {
         </div>
       ))}
 
-      {/* <PaymentSection */}
-        {/* projectName={project.name} */}
-        {/* price={project.price} */}
-        {/* projectId={projectID} */}
-      {/* /> */}
+    
     </div>
   );
 };
