@@ -59,7 +59,7 @@ const About = () => {
       <div className="image-wrapper-two">
         <img
           src="/images/inprogress.webp"
-          alt={"Crochet Mr. Cloud in progress"}
+          alt={"Dimebag my idol"}
           className="data-image-two"
         />
       </div>
@@ -70,7 +70,7 @@ const About = () => {
       <div className="image-wrapper-two">
         <img
           src="/images/crochet.webp"
-          alt={"Crochet Mr. Cloud"}
+          alt={"Real Men"}
           className="data-image-two"
         />
       </div>
@@ -79,7 +79,7 @@ const About = () => {
       <div className="image-wrapper-3">
         <img
           src="/images/partner.webp"
-          alt={"Partner in Crime"}
+          alt={"My inner child"}
           className="data-image"
         />
       </div>
