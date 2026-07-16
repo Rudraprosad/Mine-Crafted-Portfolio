@@ -64,7 +64,7 @@ const About = () => {
         />
       </div>
       <p className="section-paragraph">
-        - - Mr. Cloud in progress (looks like a fish haha 🐟) - -
+        - - Mr. Father Dimebag Lord - -
       </p>
 
       <div className="image-wrapper-two">
@@ -74,7 +74,7 @@ const About = () => {
           className="data-image-two"
         />
       </div>
-      <p className="section-paragraph">- - Mr. Cloud - -</p>
+      <p className="section-paragraph">- - Real Men - -</p>
 
       <div className="image-wrapper-3">
         <img
@@ -83,7 +83,7 @@ const About = () => {
           className="data-image"
         />
       </div>
-      <p className="section-paragraph">- - My partner in crime - -</p>
+      <p className="section-paragraph">- - My inner child - -</p>
     </div>
   );
 };
