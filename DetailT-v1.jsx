@@ -10,20 +10,13 @@ export function Model(props) {
   const { nodes, materials } = useGLTF('/DetailT-v1.glb')
   return (
     <group {...props} dispose={null}>
-      <mesh geometry={nodes.about_me_text.geometry} material={materials['MergedBake_Baked.010']} rotation={[Math.PI / 2, 0, 0]} />
       <mesh geometry={nodes.About_Me_Pictures.geometry} material={materials['MergedBake_Baked.010']} rotation={[Math.PI / 2, 0, 0]} />
-      <mesh geometry={nodes.obj12.geometry} material={nodes.obj12.material} rotation={[Math.PI / 2, 0, 0]} />
-      <mesh geometry={nodes.obj13.geometry} material={nodes.obj13.material} rotation={[Math.PI / 2, 0, 0]} />
-      <mesh geometry={nodes.obj14.geometry} material={nodes.obj14.material} rotation={[Math.PI / 2, 0, 0]} />
-      <mesh geometry={nodes.obj15.geometry} material={nodes.obj15.material} rotation={[Math.PI / 2, 0, 0]} />
-      <group rotation={[Math.PI / 2, 0, 0]}>
-        <mesh geometry={nodes.obj16.geometry} material={materials['MergedBake_Baked.010']} />
-        <mesh geometry={nodes.obj16_1.geometry} material={materials['MergedBake_Baked.010']} />
-      </group>
+      <mesh geometry={nodes.detail_Baked.geometry} material={materials['MergedBake_Baked.010']} rotation={[Math.PI / 2, 0, 0]} />
       <mesh geometry={nodes.Project_One.geometry} material={materials['MergedBake_Baked.010']} rotation={[Math.PI / 2, 0, 0]} />
       <mesh geometry={nodes.Project_Four.geometry} material={materials['MergedBake_Baked.010']} rotation={[Math.PI / 2, 0, 0]} />
       <mesh geometry={nodes.Project_Two.geometry} material={materials['MergedBake_Baked.010']} rotation={[Math.PI / 2, 0, 0]} />
       <mesh geometry={nodes.Project_Three.geometry} material={materials['MergedBake_Baked.010']} rotation={[Math.PI / 2, 0, 0]} />
+      <mesh geometry={nodes.about_me_text.geometry} material={materials['MergedBake_Baked.010']} rotation={[Math.PI / 2, 0, 0]} />
     </group>
   )
 }

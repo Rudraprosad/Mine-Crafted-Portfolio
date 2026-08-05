@@ -69,13 +69,11 @@ export default function Model({ progress = 0, pulseIntensity = 0, ...props }) {
       <mesh
         geometry={nodes.detail_Baked.geometry}
         material={materials["MergedBake_Baked.010"]}
-        position={[-6.46, 69.669, -1.148]}
         rotation={[Math.PI / 2, 0, 0]}
       />
       <mesh
         geometry={nodes.About_Me_Pictures.geometry}
         material={getMaterial("about", [0.55, 0.65])}
-        position={[-8.164, 68.036, 4.408]}
         rotation={[Math.PI / 2, 0, 0]}
         onPointerOver={() => setHoveredMesh("about")}
         onPointerOut={() => setHoveredMesh(null)}
@@ -86,7 +84,6 @@ export default function Model({ progress = 0, pulseIntensity = 0, ...props }) {
       <mesh
         geometry={nodes.Project_One.geometry}
         material={getMaterial("one", [0.32, 0.43])}
-        position={[-10.528, 69.422, -4.13]}
         rotation={[Math.PI / 2, 0, 0]}
         onPointerOver={() => setHoveredMesh("one")}
         onPointerOut={() => setHoveredMesh(null)}
@@ -97,7 +94,6 @@ export default function Model({ progress = 0, pulseIntensity = 0, ...props }) {
       <mesh
         geometry={nodes.Project_Two.geometry}
         material={getMaterial("two", [0.32, 0.43])}
-        position={[-9.532, 69.422, -4.13]}
         rotation={[Math.PI / 2, 0, 0]}
         onPointerOver={() => setHoveredMesh("two")}
         onPointerOut={() => setHoveredMesh(null)}
@@ -108,7 +104,6 @@ export default function Model({ progress = 0, pulseIntensity = 0, ...props }) {
       <mesh
         geometry={nodes.Project_Three.geometry}
         material={getMaterial("three", [0.32, 0.43])}
-        position={[-8.536, 69.422, -4.13]}
         rotation={[Math.PI / 2, 0, 0]}
         onPointerOver={() => setHoveredMesh("three")}
         onPointerOut={() => setHoveredMesh(null)}
@@ -119,7 +114,6 @@ export default function Model({ progress = 0, pulseIntensity = 0, ...props }) {
       <mesh
         geometry={nodes.Project_Four.geometry}
         material={getMaterial("four", [0.32, 0.43])}
-        position={[-7.541, 69.422, -4.13]}
         rotation={[Math.PI / 2, 0, 0]}
         onPointerOver={() => setHoveredMesh("four")}
         onPointerOut={() => setHoveredMesh(null)}
@@ -130,7 +124,6 @@ export default function Model({ progress = 0, pulseIntensity = 0, ...props }) {
       <mesh
         geometry={nodes.about_me_text.geometry}
         material={materials["MergedBake_Baked.010"]}
-        position={[-8.524, 68.356, 4.727]}
         rotation={[Math.PI / 2, 0, 0]}
       />
     </group>
