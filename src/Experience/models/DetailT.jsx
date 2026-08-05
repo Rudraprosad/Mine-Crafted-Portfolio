@@ -67,7 +67,7 @@ export default function Model({ progress = 0, pulseIntensity = 0, ...props }) {
   return (
     <group {...props} dispose={null}>
       <mesh
-        geometry={nodes.obj12.geometry}
+        geometry={nodes.detail_Baked.geometry}
         material={materials["MergedBake_Baked.010"]}
         position={[-6.46, 69.669, -1.148]}
         rotation={[Math.PI / 2, 0, 0]}
