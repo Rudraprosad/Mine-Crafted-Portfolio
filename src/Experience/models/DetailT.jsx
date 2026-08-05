@@ -123,7 +123,7 @@ export default function Model({ progress = 0, pulseIntensity = 0, ...props }) {
       />
       <mesh
         geometry={nodes.about_me_text.geometry}
-        material={materials["MergedBake_Baked.010"]}
+        material={new THREE.MeshBasicMaterial({ color: 0xffffff })}
         rotation={[Math.PI / 2, 0, 0]}
       />
     </group>
