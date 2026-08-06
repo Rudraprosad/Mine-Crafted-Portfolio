@@ -124,6 +124,7 @@ export default function Model({ progress = 0, pulseIntensity = 0, ...props }) {
       <mesh
         geometry={nodes.about_me_text.geometry}
         material={new THREE.MeshBasicMaterial({ color: 0xffffff })}
+        position={[-8.524, 68.356, 4.727]}
         rotation={[Math.PI / 2, 0, 0]}
       />
     </group>
