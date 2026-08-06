@@ -82,7 +82,7 @@ export default function Model({ progress = 0, pulseIntensity = 0, ...props }) {
         }}
       />
       <mesh
-        geometry={nodes.Project_Four.geometry}
+        geometry={nodes.Project_One.geometry}
         material={getMaterial("one", [0.32, 0.43])}
         rotation={[Math.PI / 2, 0, 0]}
         onPointerOver={() => setHoveredMesh("one")}
@@ -92,7 +92,7 @@ export default function Model({ progress = 0, pulseIntensity = 0, ...props }) {
         }}
       />
       <mesh
-        geometry={nodes.Project_Three.geometry}
+        geometry={nodes.Project_Two.geometry}
         material={getMaterial("two", [0.32, 0.43])}
         rotation={[Math.PI / 2, 0, 0]}
         onPointerOver={() => setHoveredMesh("two")}
@@ -102,7 +102,7 @@ export default function Model({ progress = 0, pulseIntensity = 0, ...props }) {
         }}
       />
       <mesh
-        geometry={nodes.Project_Two.geometry}
+        geometry={nodes.Project_Three.geometry}
         material={getMaterial("three", [0.32, 0.43])}
         rotation={[Math.PI / 2, 0, 0]}
         onPointerOver={() => setHoveredMesh("three")}
@@ -112,7 +112,7 @@ export default function Model({ progress = 0, pulseIntensity = 0, ...props }) {
         }}
       />
       <mesh
-        geometry={nodes.Project_One.geometry}
+        geometry={nodes.Project_Four.geometry}
         material={getMaterial("four", [0.32, 0.43])}
         rotation={[Math.PI / 2, 0, 0]}
         onPointerOver={() => setHoveredMesh("four")}
