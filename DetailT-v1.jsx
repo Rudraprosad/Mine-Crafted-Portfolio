@@ -16,7 +16,7 @@ export function Model(props) {
       <mesh geometry={nodes.Project_Four.geometry} material={materials['MergedBake_Baked.010']} rotation={[Math.PI / 2, 0, 0]} />
       <mesh geometry={nodes.Project_Two.geometry} material={materials['MergedBake_Baked.010']} rotation={[Math.PI / 2, 0, 0]} />
       <mesh geometry={nodes.Project_Three.geometry} material={materials['MergedBake_Baked.010']} rotation={[Math.PI / 2, 0, 0]} />
-      <mesh geometry={nodes.about_me_text.geometry} material={materials['MergedBake_Baked.010']} rotation={[Math.PI / 2, 0, 0]} />
+      {/* <mesh geometry={nodes.about_me_text.geometry} material={materials['MergedBake_Baked.010']} rotation={[Math.PI / 2, 0, 0]} /> */}
     </group>
   )
 }
