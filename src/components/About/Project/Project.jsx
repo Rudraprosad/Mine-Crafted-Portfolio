@@ -6,7 +6,6 @@ import Button from "../Button/Button";
 const projectData = {
   one: {
     name: "Weather App",
-    price: 499,
     imageUrl: "/images/intuition.webp",
     externalLink: "https://github.com/Rudraprosad/Weather-app",
     content: [
@@ -21,7 +20,6 @@ const projectData = {
   },
   two: {
     name: "CloudPoint",
-    price: 799,
     imageUrl: "/images/develop-plan.webp",
     externalLink: "https://github.com/Rudraprosad/cloudPoint-",
     content: [
@@ -37,7 +35,6 @@ const projectData = {
   },
   three: {
     name: "Healthcare Portal",
-    price: 999,
     imageUrl: "/images/multiplayer-game.webp",
     externalLink: "https://github.com/Rudraprosad/DBMS-based-Health-care-portal-using-Mysql",
     content: [
@@ -55,7 +52,6 @@ const projectData = {
   },
   four: {
     name: "Mine-Crafted Portfolio",
-    price: 1499,
     imageUrl: "/images/immersive-world.webp",
     externalLink: "https://github.com/Rudraprosad/Mine-Crafted-Portfolio",
     content: [
