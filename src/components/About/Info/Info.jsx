@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import axios from "axios";
 import "./Info.scss";
 import Button from "../Button/Button";
 
@@ -55,50 +55,45 @@ const infoMeData = {
   },
 };
 
+
+
 const Info = () => {
   const data = infoMeData["one"];
   
-  const [formData, setFormData] = useState({ name: "", email: "", message: "" });
-  const [status, setStatus] = useState({ type: "", message: "" });
-  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [userName, setUserName] = useState("");
+   const [userEmail, setUserEmail] = useState("");
+    const [userContact, setUserContact] = useState("");
+     const [userMessage, setUserMessage] = useState("");
+     const [successMessage, setSuccessMessage] = useState("");
 
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
+     const handleSubmit = async (e) => {
+      e.preventDefault();
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    setStatus({ type: "", message: "" });
+      try{
+     const response = await axios.post("http://localhost:3002/newUser", {
+      name: userName,
+      email: userEmail,
+      contact: userContact,
+      message: userMessage,
+     });
 
-    try {
-      const response = await fetch("http://localhost:5000/api/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
+     console.log(response.data);
 
-      const resData = await response.json();
+     setUserName("");
+     setUserEmail("");
+     setUserContact("");
+     setUserMessage("");
 
-      if (response.ok) {
-        setStatus({ type: "success", message: "Message sent successfully!" });
-        setFormData({ name: "", email: "", message: "" });
-      } else {
-        setStatus({ type: "error", message: resData.error || "Failed to send message." });
-      }
+     setSuccessMessage("Message sent successfully!");
+
+     setTimeout(() => {
+      setSuccessMessage("");
+     }, 3000);
+
     } catch (error) {
-      setStatus({ type: "error", message: "Network error. Please try again later." });
-    } finally {
-      setIsSubmitting(false);
+      console.error("Error sending message:", error);
     }
-  };
-
-  if (!data) {
-    return <div>Data not found</div>;
-  }
-
+    };
   const parseText = (text) => {
     const parts = text.split(/(\*[^*]+\*)/g);
     return parts.map((part, index) => {
@@ -114,6 +109,8 @@ const Info = () => {
     });
   };
 
+
+
   return (
     <>
       <div className="data-container">
@@ -121,73 +118,89 @@ const Info = () => {
           my social links
         </Button>
 
-        {/* ---- Hire Me Section ---- */}
-        <div className="hire-me-card">
-          <h2 className="hire-me-title">⚡ Hire Me</h2>
+<h2 className="hire-me-title">⚡ Hire Me</h2>
           <p className="hire-me-subtitle">
             You imagine, I code
             <br />
             Got a project in mind? Let&apos;s build something awesome together!
             Reach out via email or give me a call.
           </p>
-          <div className="hire-me-contacts">
-            <a
-              className="hire-me-btn hire-me-btn--email"
-              href="mailto:paulrudraprosad1@gmail.com?subject=Hiring%20Inquiry&body=Hi%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project."
-              target="_blank"
-              rel="noreferrer"
-            >
-              <span className="hire-me-icon">✉️</span>
-              <span>paulrudraprosad1@gmail.com</span>
-            </a>
-            <a
-              className="hire-me-btn hire-me-btn--phone"
-              href="tel:8670848233"
-            >
-              <span className="hire-me-icon">📱</span>
-              <span>8670848233</span>
-            </a>
-          </div>
 
-          <form className="contact-form" onSubmit={handleSubmit}>
-            <h3 className="contact-form-title">Or send a message</h3>
-            <input
-              type="text"
-              name="name"
-              placeholder="Your Name"
-              value={formData.name}
-              onChange={handleChange}
-              required
-              className="contact-input"
-            />
-            <input
-              type="email"
-              name="email"
-              placeholder="Your Email"
-              value={formData.email}
-              onChange={handleChange}
-              required
-              className="contact-input"
-            />
-            <textarea
-              name="message"
-              placeholder="Your Message"
-              value={formData.message}
-              onChange={handleChange}
-              required
-              className="contact-textarea"
-              rows="4"
-            ></textarea>
-            <button type="submit" className="contact-submit" disabled={isSubmitting}>
-              {isSubmitting ? "Sending..." : "Send Message"}
-            </button>
-            {status.message && (
-              <p className={`contact-status ${status.type}`}>
-                {status.message}
-              </p>
-            )}
-          </form>
-        </div>
+<div>
+  <h2 className="contact-form-title">
+    Contact Me 
+  </h2>
+
+
+  <form className="contact-form" onSubmit={handleSubmit}>
+<div className="contact-form-title">
+    <label htmlFor="name" >Your Name: </label>
+    <input
+    className="contact-input"
+    type="text"
+    id="name"
+    name="name"
+    palceholder="Enter your name"
+    onChange={(e) => setUserName(e.target.value)}
+    value={userName}
+    required
+    />
+</div>
+
+<div className="contact-form-title">
+    <label htmlFor="email" >Your Email: </label>
+    <input
+    className="contact-input"
+    type="text"
+    id="email"
+    name="email"
+    palceholder="Enter your email"
+    onChange={(e) => setUserEmail(e.target.value)}
+    value={userEmail}
+    required
+    />
+</div>
+
+<div className="contact-form-title">
+    <label htmlFor="contact" >Your Number:</label>
+    <input
+    className="contact-input"
+    type="number"
+    id="contact"
+    name="contact"
+    palceholder="Enter your contact number"
+   onChange={(e) => setUserContact(e.target.value)}
+    value={userContact}
+    required
+    />
+</div>
+
+<div className="contact-form-title">
+    <label htmlFor="message">Your Thoughts:</label>
+    <input
+    className="contact-textarea"
+    type="text"
+    id="message"
+    name="message"
+    palceholder="Enter your message"
+    onChange={(e) => setUserMessage(e.target.value)}
+    value={userMessage}
+    required
+    />
+</div>
+ 
+
+<Button className="contact-submit" type="submit">
+  Send Message
+</Button>
+
+{successMessage && (
+  <p className="success"> {successMessage} </p>
+)}
+
+</form>
+</div>
+
 
         {data.content.map((section, index) => (
           <div key={index} className="data-section">

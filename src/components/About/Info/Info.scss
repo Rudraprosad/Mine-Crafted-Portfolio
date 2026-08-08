@@ -118,9 +118,9 @@
 .contact-form {
   margin-top: 24px;
   display: flex;
-  flex-direction: column;
+  flex-direction:column;
   gap: 12px;
-  border-top: 1px solid rgba(255, 215, 0, 0.2);
+  // border-top: 1px solid rgba(255, 215, 0, 0.2);
   padding-top: 20px;
 }
 
@@ -134,7 +134,7 @@
 .contact-textarea {
   background-color: rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 10px 12px;
+  padding: 10px 2px;
   color: white;
   border-radius: 4px;
   font-family: inherit;
