@@ -21,10 +21,10 @@ export default function Model({ progress = 0, pulseIntensity = 0, ...props }) {
   const { openModal } = useModalStore();
 
   const projectNames = {
-    one: "Developing creative intution repo",
+    one: "AI powered Transformer Health Monitoring System",
     two: "Developing self learning skills repo",
     three: "Creating a Multiplayer Game ",
-    four: "Creating Immersive Worlds in blender",
+    four: "Devorbit a Freelancer Dashboard",
   };
 
   const handleClick = (elementID) => {

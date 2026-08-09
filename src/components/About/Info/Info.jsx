@@ -9,7 +9,7 @@ const infoMeData = {
       {
         header: "💭 About this minecraftfolio",
         paragraphs: [
-          "This folio was created just to showcase my creativty and nature towards the world! Click the button above to learn how to create a portfolio like this from baking textures to custom camera movements!!!",
+          "This folio was created just to showcase my creativty and nature towards the world! Click the button above to contact me and hire me to create a portfolio like this from baking textures to custom camera movements!!!",
         ],
       },
       {
@@ -18,13 +18,10 @@ const infoMeData = {
           " - A big thanks to *MCprep Blender addon creators*. It saves so much time working with Minecraft-like things in Blender. Would not have been possible otherwise.",
           " - Special thanks to ❤️*my mom*❤️ for the inspiration for the house design!!!",
           " - Thank you *JDGraphics*, the Minecraft font is super awesome.",
-          " - Big shoutout to *Bruno Simon's three.js journey* course and all the helpers in the Discord channel. If I didn't start my journey with this course, I don't think I'd be where I am now.",
-          " - Shoutout to *Wawa Sensei's R3F course*, learned a lot on the camera controls lesson.",
+          " - Big shoutout to *Andrew Won's three.js journey* course and all the helpers in the Discord channel. If I didn't start my journey with this course, I don't think I'd be where I am now.",
+          " - Shoutout to *Shraddha Mam from Apna College*, learned a lot on the MERN stack app building.",
           " - Audio was sourced from *myinstants.com, voicemod.net, and downloads.khinsider.com*",
-          " - All the employees at the *Blender Foundation*, thank you from the bottom of my heart.",
           " - Amazing mob models all credited to *Vincent Yanez* on Sketchfab!! Thank you for them Vincent!",
-          " - Of course shoutout to the amazing *three.js community* not only for the tool itself but also for three.js discourse, a lot of my issues were solved on there. Love all of you!!!",
-          " - Lastly, to all the people that created amazing free online web tools like image to *pixelated image converters* or *beizer curve CSS visualizers,* thank you!",
         ],
       },
       {
@@ -70,7 +67,7 @@ const Info = () => {
       e.preventDefault();
 
       try{
-     const response = await axios.post("http://localhost:3002/newUser", {
+     const response = await axios.post("https://mine-crafted-portfolio-backend.vercel.app/newUser", {
       name: userName,
       email: userEmail,
       contact: userContact,
@@ -130,7 +127,13 @@ const Info = () => {
   <h2 className="contact-form-title">
     Contact Me 
   </h2>
-
+  <h1 className="hire-me-subtitle">
+  my email: paulrudraprosad1@gmail.com
+ 
+  </h1>
+  <h1 className="hire-me-subtitle">
+    my contact Number: 8670848233
+  </h1>
 
   <form className="contact-form" onSubmit={handleSubmit}>
 <div className="contact-form-title">
@@ -191,7 +194,7 @@ const Info = () => {
  
 
 <Button className="contact-submit" type="submit">
-  Send Message
+  Send Me a Message
 </Button>
 
 {successMessage && (
