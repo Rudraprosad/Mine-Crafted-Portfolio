@@ -5,15 +5,17 @@ import Button from "../Button/Button";
 
 const projectData = {
   one: {
-    name: "Weather App",
-    imageUrl: "/images/intuition.webp",
-    externalLink: "https://github.com/Rudraprosad/Weather-app",
+    name: "Transformer Health Prediction",
+    imageUrl: "/images/intution.webp",
+    externalLink: "https://github.com/Rudraprosad/Transformer-Health-prediction-AI",
     content: [
       {
         header: "About the Project",
         paragraphs: [
-          "Tutorials are awesome and all, but sometimes we get into tutorial hell and watch many many videos over and over again. Then when we try to create something on our own we struggle to do so and watch more tutorials.",
-          "In this video I talk about how you can develop your own natural intuition by using case studies you can find online. While many of them are great and point out things, you can also look at the things they don't point out for even more information. It might be trivial to the authors of the article, but often times it is new information for those starting out. I do this all the time.",
+          "Models: Random Forest, XGBoost, AdaBoost, LightGBM",
+          "Ensemble: Weighted Soft Voting and Stacking with Logistic Regression meta-learner",
+          "Preprocessing: StandardScaler, Label Encoding, Median Imputation, SMOTE",
+          "Evaluation: Accuracy, Classification Report, Prediction Confidence"
         ],
       },
     ],

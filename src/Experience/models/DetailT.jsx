@@ -22,7 +22,7 @@ export default function Model({ progress = 0, pulseIntensity = 0, ...props }) {
 
   const projectNames = {
     one: "AI powered Transformer Health Monitoring System",
-    two: "Developing self learning skills repo",
+    two: "A version control system of my own",
     three: "Creating a Multiplayer Game ",
     four: "Devorbit a Freelancer Dashboard",
   };
