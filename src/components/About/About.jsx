@@ -6,7 +6,7 @@ const aboutMeData = {
     name: "rudra prosad paul",
     imageUrl: "/images/me.webp",
     externalLink: "https://github.com/Rudraprosad",
-    resumelink:"https://drive.google.com/file/d/1mYnucwfFKh1q22FVpFbQFU3chmWrcbvS/view?usp=sharing",
+    resumelink:"https://drive.google.com/file/d/1t6BxMTaaGcMJuss5W2wps_wKGcPNNZj0/view?usp=sharing",
     content: [
       {
         header: "About Me",
